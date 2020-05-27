@@ -1,0 +1,141 @@
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.2.3/jquery.min.js"></script>
+    </head>
+    <body>
+        <div class="header">
+            <div class="strip">
+                <div class="content">
+                    <div class="logo">
+                        <img src="img/logo.png" alt="logo" />
+                    </div>
+                    <div class="headerText">
+                        <h1>Удмуртский государственный университет</h1>
+                        <h2>Центр информационного обеспечения</h2>
+                    </div>
+                </div>
+
+            </div>
+            <div id="menu" hidden="true">
+                    <ul>
+                        <li><a href="">Новости</a></li>
+                        <li><a href="">Библиотека</a></li>
+                        <li><a href="">Мои данные</a></li>
+                        <li><a href="">Портфолио</a></li>
+                        <li><a href="">Студент</a></li>
+                    </ul>
+                    <hr />
+                </div>
+        </div>
+        <div class="body">
+            <div class="content">
+                <div id="authBox">
+                    <div class="authBoxContent">
+                        <p id="authTitle">Авторизация</p>
+                        <div id="authForm">
+                            <p><label for="login">Логин</label></p>
+                            <p><input type="login" class="authTextFields" value="" placeholder="Логин"></p>
+                            <p><label for="password">Пароль</label></p>
+                            <p><input type="password" class="authTextFields" value="" placeholder="Пароль"></p>
+                            <button id="authButton">Войти</button>
+                            <script>
+                                document.getElementById('authButton').onclick = function() {
+                                    document.getElementById('authBox').hidden = true;
+                                    document.getElementById('menu').hidden = false;
+                                    document.getElementById('userInfo').hidden = false;
+                                    document.getElementById('authInstructions').hidden = true;
+                                }
+                            </script>
+                        </div>
+                    </div>
+                </div>
+                <div id="userInfo" hidden="true">
+                    <div id="generalInformation">
+                        <div class="tableHeader"> 
+                            <div class="headerText">Общие сведения</div>
+                        </div>
+                        <div class="tableCell">
+                            <div class="tableCellContent">
+                                <div class="cellTitle">ФИО</div>
+                                <div class="cellValue">Нуриев Тимур Талгатович</div>
+                            </div>
+                        </div>
+                        <div class="tableCell">
+                            <div class="tableCellContent">
+                                <div class="cellTitle">Дата рождения</div>
+                                <div class="cellValue">12.05.1998</div>
+                            </div>
+                        </div>
+                    </div> 
+                    <div id="addresses">
+                        <div class="tableHeader"> 
+                            <div class="headerText">Адреса</div>
+                        </div>
+                        <div class="tableCell">
+                            <div class="tableCellContent">
+                                <div class="cellTitle">Место рождения по паспорту</div>
+                                <div class="cellValue">г.Ижевск (05.07.16)</div>
+                            </div>
+                        </div>
+                        <div class="tableCell">
+                            <div class="tableCellContent">
+                                <div class="cellTitle">Регистрации</div>
+                                <div class="cellValue">	г.Ижевск, ул.Курсовая, д.13, кв.13 (05.07.16)</div>
+                            </div>
+                        </div>
+                        <div class="tableCell">
+                            <div class="tableCellContent">
+                                <div class="cellTitle">E-mail</div>
+                                <div class="cellValue">	uzumaci@mail.ru</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="userDocuments">
+                        <div class="tableHeader"> 
+                            <div class="headerText">Личные документы</div>
+                        </div>
+                        <div class="tableCell">
+                            <div class="tableCellContent">
+                                <div class="cellForDocument">Аттестат о среднем общем образовании, выданный ................................................................</div>
+                            </div>
+                        </div>
+                        <div class="tableCell">
+                            <div class="tableCellContent">
+                                <div class="cellForDocument">Свидетельство о постановке на учет в ГНИ</div>
+                            </div>
+                        </div>
+                        <div class="tableCell">
+                            <div class="tableCellContent">
+                                <div class="cellForDocument">Паспорт гражданина РФ</div>
+                            </div>
+                        </div>
+                        <div class="tableCell">
+                            <div class="tableCellContent">
+                                <div class="cellForDocument">Справка о назначении государственной социальной помощи</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="helpPart">
+                    <div id="authInstructions">
+                        <p class="authInstrText">
+                            Для входа на портал необходимо пройти авторизацию.
+                        </p>
+                        <p class="authInstrText">
+                            Авторизационные данные можно получить при наличии удостоверения сотрудника в отделе кадров или индивидуально при наличии читательского билета в отделах обслуживания научной библиотеки. Студенты получают авторизационные данные в деканате своего института вместе со студенческим билетом. Подробнее о входе на портал можно посмотреть здесь.
+                        </p>
+                    </div>
+                    <div id="portalFAQandHelp">
+                        <p id="FaqLinkTitle"><a  href="">Вопросы/ответы по порталу ИИАС (FAQ)</a></p>
+                        <p id="contactWithAdmins">Если у Вас есть замечания, пожелания или найдены ошибки в работе портала пишите на portal@asu.udsu.ru.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
